@@ -15,8 +15,8 @@
 
     <form id="survey-form" method="post" action="/submit">
         <fieldset>
-            <label for="name" id="name-label">Nome: <input id="name" name="name" type="text" required placeholder="Inserisci il tuo nome" class="inline" /></label> <br>
-            <label for="email" id="email-label">Email: <input id="email" name="email" type="email" required placeholder="Inserisci la tua email" class="inline"/></label> <br>
+            <label for="name" id="name-label">Nome: <input id="name" name="name" type="text" required placeholder="Inserisci il tuo nome"/></label> <br>
+            <label for="email" id="email-label">Email: <input id="email" name="email" type="email" required placeholder="Inserisci la tua email"/></label> <br>
             <label for="number" id="number-label">Età:<br> <input id="number" type="number" min="16" max="120" required placeholder="Inserisci la tua età"/></label>
             <label for="dropdown"> Qual è il tuo stato attuale?
                 <select id="dropdown" name="dropd" required>
@@ -31,33 +31,34 @@
 
         <fieldset>
             <legend>Raccomanderesti FCC a qualcuno?</legend>
+            
             <label for="consiglioSì"><input id="consiglioSì" type="radio" name="raccomandazione" checked value="1" class="inline" /> Assolutamente sì</label>
             <label for="consiglioForse"><input id="consiglioForse" type="radio" name="raccomandazione" value="2" class="inline"/> Forse</label>
-            <label for="consiglioNo"><input id="consiglioNo" type="radio" name="raccomandazione" value="3"/> No</label>
+            <label for="consiglioNo"><input  class="inline" Sid="consiglioNo" type="radio" name="raccomandazione" value="3"/> No</label>
         </fieldset>
 
         <fieldset>
             <legend>Ti piacerebbe lavorare nel mondo della programmazione?</legend>
-            <label for="EnjoyProgrammingYes"><input id="EnjoyProgrammingYes" type="radio" name="Programming" checked required value="1"/> Sì</label>
-            <label for="EnjoyProgrammingNo"><input id="EnjoyProgrammingNo" type="radio" name="Programming" required value="2"/> No</label>
+            <label for="EnjoyProgrammingYes"><input id="EnjoyProgrammingYes" type="radio" name="Programming" checked required value="1" class="inline"/> Sì</label>
+            <label for="EnjoyProgrammingNo"><input id="EnjoyProgrammingNo" type="radio" name="Programming" required value="2" class="inline"/> No</label>
         </fieldset>
 
         <fieldset>
             <legend>Cosa ti piace fare nel tempo libero?</legend>
             <label for="sport">
-                <input id="sport" type="checkbox" name="hobby" value="Sport"> Sport
+                <input id="sport" type="checkbox" name="hobby" value="Sport" class="inline"> Sport
             </label><br>
             <label for="cinema">
-                <input id="cinema" type="checkbox" name="hobby" value="Cinema"> Cinema
+                <input id="cinema" type="checkbox" name="hobby" value="Cinema" class="inline"> Cinema
             </label><br>
             <label for="gaming">
-                <input id="gaming" type="checkbox" name="hobby" value="Gaming"> Gaming
+                <input id="gaming" type="checkbox" name="hobby" value="Gaming" class="inline"> Gaming
             </label><br>
             <label for="leggere">
-                <input id="leggere" type="checkbox" name="hobby" value="Leggere"> Leggere
+                <input id="leggere" type="checkbox" name="hobby" value="Leggere" class="inline"> Leggere
             </label><br>
             <label for="viaggiare">
-                <input id="viaggiare" type="checkbox" name="hobby" value="Viaggiare"> Viaggiare
+                <input id="viaggiare" type="checkbox" name="hobby" value="Viaggiare" class="inline"> Viaggiare
             </label>
         </fieldset>
 
@@ -66,11 +67,11 @@
                 <br><textarea rows="4" cols="40" id="bio" placeholder="es. Adoro il Web..." name="bio"></textarea>
             </label>
         </fieldset>
-
+    <fieldset>
         <label for="terms-and-conditions">
-            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="1" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" ">terms and conditions</a>
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="1" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
         </label>
-
+    </fieldset>
         <input type="submit" value="Submit" id="submit" />
         </form>
 </body>
